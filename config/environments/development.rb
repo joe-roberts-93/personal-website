@@ -48,12 +48,13 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    user_name:            'roberts.josephpaul@gmail.com',
-    password:             'amho mmim vmgd ftug',
+    user_name:            ENV["MAILER_EMAIL"],
+    password:             ENV["MAILER_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true,
     open_timeout:         5,
-    read_timeout:         5 }
+    read_timeout:         5
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
