@@ -1,9 +1,14 @@
 <div class="intro">
-  <h1>Hi, I'm Joe Roberts</h1>
-  <h2>I'm excited for you to check out my projects!</h2>
-  <a class="button" href="#projects">Me too!</a>
+  <div class="intro-photo">
+    <%= image_tag("joe-roberts.jpg", alt:"A photo of Joe Roberts smiling from a cliff above a beach", class:"profile-picture") %>
+  </div>
+  <div class = intro-text-container>
+    <h1 class="intro-text">Hi, I'm Joe Roberts</h1>
+    <h2 class="intro-text">I'm excited for you to check out my projects!</h2>
+    <a class="intro-button intro-text" href="#projects">Me too!</a>
+  </div>
 </div>
-<div id="about" class="section">
+<div id="about" class="section dark">
   <div class="section-header">
     <h2>About me</h2>
     <p>Read about my background, skills, and what it's like to work with me</p>
@@ -12,13 +17,10 @@
     <div class="who-am-i">
       <h3>Who am I?</h3>
       <p>
-        I'm an adaptable and solutions-oriented web developer who enjoys collaborating with teammates to solve technical problems and overcome challenges.<br>
+        I’m a full stack developer who loves to create things and fix problems. After becoming curious about code and wanting community and to take things further, I took a bootcamp in the summer of 2023.
         <br>
-        I retrained in Web Development at Le Wagon's nine-week full-time bootcamp, where I excelled as a quick learner and hard worker. As a final project, my team conceived, designed, built and shipped to production a web application in under two weeks which solved the dual problems of finding fresh, high quality food and tackling retail carbon emissions.<br>
         <br>
-        With a background in digital communications, I bring strong skills in communication and research — soft skills that make me a stronger developer both in a team and individually.<br>
-        <br>
-        I'm currently working on personal projects while I seek work as a Web Developer, and continue to learn new skills<br>
+        I love to work in a team, but am currently enjoying the freedom of working on personal projects and learning new skills while I seek full-time work.
       </p>
     </div>
     <div class="skills">
@@ -27,7 +29,7 @@
         <li>Ruby on Rails</li>
         <li>HTML</li>
         <li>CSS</li>
-        <li>JavaScript (stimulus)</li>
+        <li>JavaScript</li>
         <li>Git</li>
         <li>GitHub</li>
         <li>Heroku</li>
@@ -56,8 +58,8 @@
     <h2>Projects</h2>
     <p>Check out some of the projects I've worked on and learned from</p>
   </div>
-  <div class="project">
-    <h3>Farmland</h3>
+  <div class="project farmland">
+    <h2 class=project-name>Farmland</h2>
     <div class="project-content">
       <div class="project-images">
         <%= image_tag("Farmland-1.png", alt: "A photo of rolling fields of crops. Text superimposed reads: Farmland - Discover us! Get your farm-fresh products directly from local farms, even if you don't have a car. Carpool, reduce your CO2 emissions, and enjoy the best local produce!", class:"project-image") %>
@@ -85,8 +87,8 @@
       </div>
     </div>
   </div>
-  <div class="project">
-    <h3>Unicornland</h3>
+  <div class="project unicornland">
+    <h2 class=project-name>Unicornland</h2>
     <div class="project-images-landscape">
       <%= image_tag("unicornland-1.png",
       alt: "A screenshot of Unicornland - the screen shows a unicorn along with some details about him, and invites users to rent it for one week",
@@ -115,7 +117,7 @@
     </div>
   </div>
 </div>
-<div id="contact" class="section">
+<div id="contact" class="section dark">
   <div class="section-header">
     <h2>Contact</h2>
     <p>Get in touch with me by email or check out my socials!</p>
