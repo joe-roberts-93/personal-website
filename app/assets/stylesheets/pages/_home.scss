@@ -1,15 +1,20 @@
 // Specific CSS for your home-page
 body {
-  background-color: whitesmoke;
+  background-color:#C7EDE4;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
 }
+
+.dark{
+  background-color: #C8BACA ;
+}
+
 
 .nav {
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
-  padding: 4px 10px 0px 10px;
+  padding: 8px 10px 0px 10px;
   position:sticky;
   top: 0px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
@@ -23,21 +28,39 @@ body {
 
 .intro{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 140px;
+  padding-bottom: 140px;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
-.button {
+.profile-picture{
+  width: 300px;
+  border-radius: 50%;
+}
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-text{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.intro-button {
   background-color:rgb(71, 73, 164);
   letter-spacing: 0.5px;
   color: #FFFFFF;
   padding: 10px 40px;
   border-radius: 10px;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .section{
-  margin: 30px;
+  margin-top: 30px;
+  padding: 0px 120px 20px;
 }
 
 .section-header{
@@ -81,7 +104,7 @@ body {
   margin: 0 30px;
   border-radius: 10px;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(210, 210, 210, 0.5);
+  border: 1px solid rgba(132, 132, 132, 0.3);
 }
 
 .recommender {
@@ -115,6 +138,27 @@ body {
   font-weight: bold;
 }
 
+.project-name{
+  margin: 10px;
+  text-align: center;
+}
+
+.farmland{
+ width: 95%;
+ margin: 20px auto;
+ padding: 20px;
+ border-radius: 20px;
+ background-color: #1C7C54;
+}
+
+.unicornland{
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: pink;
+}
+
 .project-content{
   display: flex;
 }
@@ -127,12 +171,15 @@ body {
 }
 
 .gallery{
-  display: block;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  justify-content: space-between;
+  margin-top: 4px;
 }
 
 .gallery img{
-  width: 50px;
-  height: 100px
+  max-width: 48px;
 }
 
 .project-images-landscape{
