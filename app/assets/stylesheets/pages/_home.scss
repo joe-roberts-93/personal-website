@@ -1,12 +1,12 @@
 // Specific CSS for your home-page
 body {
-  background-color:#F8F1F7;
+  background-color:#C7EDE4;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
 }
 
 .dark{
-  background-color: #D6DBD2 ;
+  background-color: #C8BACA ;
 }
 
 
@@ -148,7 +148,7 @@ body {
  margin: 20px auto;
  padding: 20px;
  border-radius: 20px;
- background-color: green;
+ background-color: #1C7C54;
 }
 
 .unicornland{
@@ -171,12 +171,15 @@ body {
 }
 
 .gallery{
-  display: block;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  justify-content: space-between;
+  margin-top: 4px;
 }
 
 .gallery img{
-  width: 50px;
-  height: 100px
+  max-width: 48px;
 }
 
 .project-images-landscape{
