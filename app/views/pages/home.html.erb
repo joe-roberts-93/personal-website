@@ -89,13 +89,14 @@
   </div>
   <div class="project unicornland">
     <h2 class=project-name>Unicornland</h2>
-    <div class="project-images-landscape">
+    <div class="project-images-landscape" data-controller="unicornland-gallery">
       <%= image_tag("unicornland-1.png",
       alt: "A screenshot of Unicornland - the screen shows a unicorn along with some details about him, and invites users to rent it for one week",
-      class: "project-image-landscape") %>
+      class: "project-image-landscape",
+      id:"mainunicornimg") %>
       <div class="gallery-landscape">
-        <%= image_tag("unicornland-1.png", alt:"A screenshot of Unicornland - the screen shows a unicorn along with some details about him, and invites users to rent it for one week") %>
-        <%= image_tag("unicornland-2.png", alt:"A screenshot of Unicornland - the screen shows several unicorns along with filtering options and a search bar") %>
+        <%= image_tag("unicornland-1.png", data: {action: "click->unicornland-gallery#changeUnicornlandImage"}, alt:"A screenshot of Unicornland - the screen shows a unicorn along with some details about him, and invites users to rent it for one week") %>
+        <%= image_tag("unicornland-2.png", data: {action: "click->unicornland-gallery#changeUnicornlandImage"}, alt:"A screenshot of Unicornland - the screen shows several unicorns along with filtering options and a search bar") %>
       </div>
     </div>
     <div class="project-content">
