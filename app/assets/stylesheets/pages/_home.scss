@@ -6,7 +6,7 @@ body {
 }
 
 .dark{
-  background-color: #C8BACA ;
+  background-color: #FFC2C2 ;
   width: 100vw;
   margin: 0;
 }
@@ -71,11 +71,18 @@ body {
 .section{
   margin-top: 30px;
   padding: 0px 120px 20px;
-}
 
-.section-header{
-  padding-top: 40px;
-  text-align: center;
+  .section-header{
+    padding-top: 40px;
+    text-align: center;
+
+    .section-intro{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 300;
+      color:darkslategrey;
+      font-size: 1.3em;
+    }
+  }
 }
 
 .about-top{
@@ -117,7 +124,6 @@ body {
 
 .shadowed {
   box-shadow: 0px 10px 17px rgba(85, 82, 86, 0.15);
-  border: 1px solid rgba(132, 132, 132, 0.3);
 }
 
 .recommender {
@@ -190,10 +196,14 @@ body {
   height: 90px;
   justify-content: space-between;
   margin-top: 4px;
-}
 
-.gallery img{
-  max-width: 48px;
+  img{
+    max-width: 48px;
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
 }
 
 .project-images-landscape{
@@ -201,10 +211,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .project-image-landscape{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   border: 1px solid rgba(210, 210, 210, 0.5);
 }
@@ -212,12 +223,16 @@ body {
 .gallery-landscape{
   display: flex;
   justify-content: center;
-}
 
-.gallery-landscape img {
-  width: 20%;
-  margin: 1%;
-  border: 1px solid rgba(210, 210, 210, 0.5);
+  img {
+    width: 25%;
+    margin: 1%;
+    border: 1px solid rgba(210, 210, 210, 0.5);
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
 }
 
 h3{
@@ -276,7 +291,24 @@ html{
     }
   }
 
+  .project-image-landscape{
+    width: 70%;
+    margin: 10px;
+    border: 1px solid rgba(210, 210, 210, 0.5);
+  }
+
   .project-images-landscape{
     flex-direction: row;
+  }
+
+  .gallery-landscape{
+    flex-direction: column;
+    width: 30%;
+
+    img {
+      width: 90%;
+      margin: 1%;
+      border: 1px solid rgba(210, 210, 210, 0.5);
+    }
   }
 }
