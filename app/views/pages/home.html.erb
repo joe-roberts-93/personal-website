@@ -4,8 +4,8 @@
   </div>
   <div class = intro-text-container>
     <h1 class="intro-text">Hi, I'm Joe Roberts</h1>
-    <h2 class="intro-text">I'm excited for you to check out my projects!</h2>
-    <a class="intro-button intro-text" href="#projects">Me too!</a>
+    <p class="intro-text">I'm excited for you to check out my projects!</p>
+    <a class="intro-button" href="#projects">Me&nbsp;too!</a>
   </div>
 </div>
 <div id="about" class="section dark">
@@ -39,12 +39,11 @@
   </div>
   <div class="personality">
     <h3>What am I like to work with?</h3>
-    <div class="recommendation">
+    <div class="recommendation shadowed">
       <div class="recommender">
         <%= image_tag("priscilla-uribe.jpg", alt:"Photo of Priscilla Uribe", class: "recommender-photo") %>
         <p><span class="bold">Priscilla Uribe</span> (She/Her) <br>
-        Full-Stack Developer | Economics Graduate at The University of British Columbia | Co-Founder & COO @ Brokol App<br>
-        September 14, 2023
+        <em>Full-Stack Developer, Co-Founder & COO @ Brokol App</em><br>
         </p>
       </div>
       <p>It was an honor to work with Joe at Le Wagon Canada's Web Development Bootcamp this summer. Our collaboration peaked during our Farmland web app project, which we developed in just 7 days using Ruby on Rails.</p>
@@ -56,9 +55,9 @@
 <div id="projects" class="section">
   <div class="section-header">
     <h2>Projects</h2>
-    <p>Check out some of the projects I've worked on and learned from</p>
+    <p>Check out some of the projects I've worked on and learned from. I continue to work on personal projects in my free time.</p>
   </div>
-  <div class="project farmland">
+  <div class="project farmland shadowed">
     <h2 class=project-name>Farmland</h2>
     <div class="project-content">
       <div class="project-images">
@@ -87,7 +86,7 @@
       </div>
     </div>
   </div>
-  <div class="project unicornland">
+  <div class="project unicornland shadowed">
     <h2 class=project-name>Unicornland</h2>
     <div class="project-images-landscape" data-controller="unicornland-gallery">
       <%= image_tag("unicornland-1.png",
