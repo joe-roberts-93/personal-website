@@ -33,22 +33,30 @@ body {
   padding-bottom: 140px;
   justify-content: space-around;
   padding-top: 50px;
-}
 
-.profile-picture{
-  margin: 20px;
-  width: 300px;
-  border-radius: 50%;
-}
 
-.intro-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.intro-text{
-  margin-bottom: 30px;
-  text-align: center;
+  .profile-picture{
+    margin: 20px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p.intro-text {
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+
+    .intro-text{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
 }
 
 .intro-button {
@@ -57,7 +65,6 @@ body {
   color: #FFFFFF;
   padding: 10px 40px;
   border-radius: 10px;
-  width: 30%;
   margin: 0 auto;
 }
 
@@ -106,7 +113,10 @@ body {
   width: 90%;
   margin: 0 30px;
   border-radius: 10px;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.shadowed {
+  box-shadow: 0px 10px 17px rgba(85, 82, 86, 0.15);
   border: 1px solid rgba(132, 132, 132, 0.3);
 }
 
@@ -223,6 +233,7 @@ html{
 
   .intro{
     flex-direction: column;
+    justify-content: center;
     padding: 15px;
 
     .intro-photo{
@@ -232,7 +243,7 @@ html{
 
   .section{
     margin-top: 0px;
-    padding: 0px 50px 20px;
+    padding: 0px 35px 20px;
   }
 
   .about-top{
