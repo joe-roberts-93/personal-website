@@ -9,9 +9,17 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body>
+  <body data-controller="menu">
   <div class="nav">
     <a class="name" href="#">Joe Roberts</a>
+    <i class="fa-solid fa-bars menu-icon is-hidden" data-action="click->menu#showMenu"></i>
+    <ul class="horizontal-menu nav-font">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+    <div class="vertical-menu is-hidden nav-font">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
