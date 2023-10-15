@@ -1,20 +1,30 @@
 // Specific CSS for your home-page
 body {
-  background-color:#EDFFD8;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfff7;
+  font-family:$body-font, Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.02rem;
+  font-weight: 400;
   margin: 0;
 }
 
 .dark{
-  background-color: #ADAEC0;
+  background-color: #fff4de;
   margin: 0px;
 }
 
+.bold {
+  display:inline;
+  font-weight: bold;
+}
+
+.is-hidden{
+  display: none;
+}
 
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: #EBF6F6;
+  background-color: #f4ffff;
   padding: 8px 20px 0px 20px;
   position:sticky;
   top: 0px;
@@ -28,12 +38,24 @@ body {
     color: #000000;
   }
 
-  li {
+  .menu-icon{
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  li{
     display: inline;
-    list-style: none;
+  }
+}
+
+.nav-font{
+  li {
     padding: 3px 10px 0px 3px;
     font-weight: 600;
     letter-spacing: .5px;
+    list-style: none;
   }
 
   a{
@@ -42,8 +64,15 @@ body {
   }
 
   a:hover{
-    color: #ffccc0;
+    color: rgb(255, 113, 113);
   }
+}
+
+.vertical-menu{
+    background-color: #f4ffff;
+    padding-bottom: .2rem;
+    position: sticky;
+    top: 40px;
 }
 
 .intro{
@@ -97,7 +126,7 @@ body {
     .section-intro{
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: 300;
-      color:darkslategrey;
+      color: #294747;
       font-size: 1.3em;
     }
   }
@@ -143,6 +172,8 @@ body {
   width: 90%;
   margin: 0 30px;
   border-radius: 10px;
+  font-weight: 300;
+  letter-spacing: normal;
 }
 
 .recommender {
@@ -170,11 +201,6 @@ body {
   margin: 5px;
 }
 
-.bold {
-  display:inline;
-  font-weight: bold;
-}
-
 .project-name{
   margin: 15px 0px 30px;
   text-align: center;
@@ -187,14 +213,11 @@ body {
 .project{
   width: 95%;
   padding: 20px;
-  border-radius: 20px;
-  background-color: #ffccc0
 }
 
 .project-content{
   display: flex;
 }
-
 
 .project-image{
   width: 200px;
@@ -258,6 +281,18 @@ html{
 
 @media only screen and (max-width: 768px){
 
+  .nav{
+
+    .menu-icon{
+      display: block;
+    }
+
+    .horizontal-menu{
+      display: none;
+    }
+
+  }
+
   .intro{
     flex-direction: column;
     justify-content: center;
@@ -301,6 +336,10 @@ html{
         margin-right: 0;
       }
     }
+  }
+
+  .project-name{
+    margin: 5px 0px 15px;
   }
 
   .project-image-landscape{
