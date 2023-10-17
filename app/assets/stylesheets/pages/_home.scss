@@ -243,25 +243,23 @@ body {
 
 .project-images-landscape{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 10px;
 }
 
 .project-image-landscape{
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 10px 10px 10px 0px;
   border: 1px solid rgba(210, 210, 210, 0.5);
 }
 
 .gallery-landscape{
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   img {
-    width: 25%;
-    margin: 1%;
+    width: 100%;
+    margin: 10px 0px;
     border: 1px solid rgba(210, 210, 210, 0.5);
   }
 
@@ -342,22 +340,22 @@ html{
     margin: 5px 0px 15px;
   }
 
-  .project-image-landscape{
-    width: 70%;
-    margin: 10px;
-    border: 1px solid rgba(210, 210, 210, 0.5);
+  .project-images-landscape{
+    flex-direction: column;
+    width: 100%;
   }
 
-  .project-images-landscape{
-    flex-direction: row;
+  .project-image-landscape{
+    width: 100%;
+    margin: 5px 0px;
   }
 
   .gallery-landscape{
-    flex-direction: column;
-    width: 30%;
+    flex-direction: row;
+    padding: 0px 10px;
 
     img {
-      width: 90%;
+      width: 45%;
       margin: 1%;
       border: 1px solid rgba(210, 210, 210, 0.5);
     }
