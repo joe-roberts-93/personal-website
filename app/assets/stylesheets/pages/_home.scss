@@ -2,7 +2,6 @@
 body {
   background-color: #fcfff7;
   font-family:$body-font, Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 0.02rem;
   font-weight: 400;
 }
 
@@ -40,7 +39,7 @@ html{
   .name{
     margin: 4px 0px;
     font-family: $headers-font;
-    letter-spacing: .8px;
+    letter-spacing: .1rem;
     font-style: italic;
     color: #000000;
   }
@@ -86,6 +85,7 @@ html{
   padding-bottom: 40px;
   justify-content: space-around;
   padding-top: 50px;
+  height: 95vh;
 
 
   .profile-picture{
@@ -137,6 +137,17 @@ html{
       font-weight: 300;
       color: #294747;
       font-size: 1.3em;
+    }
+
+    a{
+      text-decoration: none;
+      border-bottom: 0.08em solid #294747;
+      color: #294747;
+    }
+
+    a:hover {
+      color:rgb(255, 113, 113);
+      border-bottom: 0.08em solid rgb(255, 113, 113);
     }
   }
 }
