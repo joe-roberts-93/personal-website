@@ -1,0 +1,29 @@
+<div class="project farmland">
+    <h2 class=project-name>Farmland</h2>
+    <div class="project-content">
+      <div class="project-images">
+        <%= image_tag("Farmland-1.png", alt: "A photo of rolling fields of crops. Text superimposed reads: Farmland - Discover us! Get your farm-fresh products directly from local farms, even if you don't have a car. Carpool, reduce your CO2 emissions, and enjoy the best local produce!", class:"project-image", id:"mainimgid") %>
+        <div class="gallery" data-controller="gallery">
+          <%= image_tag("Farmland-1.png", alt:"A thumbnail of a screenshot of the Farmland app", data: {action: "click->gallery#changeImage"}) %>
+          <%= image_tag("Farmland-2.png", alt:"A thumbnail of a screenshot of the Farmland app", data: {action: "click->gallery#changeImage"}) %>
+          <%= image_tag("Farmland-3.png", alt:"A thumbnail of a screenshot of the Farmland app", data: {action: "click->gallery#changeImage"}) %>
+          <%= image_tag("Farmland-4.png", alt:"A thumbnail of a screenshot of the Farmland app", data: {action: "click->gallery#changeImage"}) %>
+        </div>
+      </div>
+      <div class="project-description">
+      <p>Farmland allows users to order from and carpool to local farms, all while tracking their CO2 savings versus buying produce from retail stores. This was a team project conceived, designed and built at Le Wagon's full time web development bootcamp in under two weeks.<br>
+        <br>
+        Features:
+        <ul>
+          <li>Organises farms by distance from user's address</li>
+          <li>Filter farms by product, product type</li>
+          <li>Place an order and join an upcoming carpool to a farm</li>
+          <li>Calculates, using real-world data, how much carbon dioxide users save by shopping direct from farms compared to retail</li>
+          <li>Allows users to message the other users in their carpool</li>
+          <li>Calculates how much carbon dioxide users save by carpooling as opposed to driving alone</li>
+          <li>'Carbon&nbspbar' which updates live as you add items to your order.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </div>
