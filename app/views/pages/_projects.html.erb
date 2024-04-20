@@ -1,7 +1,11 @@
 <div data-controller="project-scroll">
-<ul class= "project-container">
-<li data-action="click->project-scroll#nextProject" class="swap-project">Next <i class="fa-solid fa-arrow-right"></i></li>
-<li><%= render "farmland" %></li>
-<li><%= render "unicornland" %></li>
+  <ul class= "project-container">
+  <div class="button-container">
+    <li data-action="click->project-scroll#nextProject" class="swap-project next-project">Next <i class="fa-solid fa-arrow-right"></i></li>
+    <li data-action="click->project-scroll#previousProject" class="swap-project previous-project"><i class="fa-solid fa-arrow-left"></i> Previous</li>
+  </div>
+  <li class="is-active-project"><%= render "thriveoutloud" %></li>
+  <li class="is-hidden-project"><%= render "farmland" %></li>
+  <li class="is-hidden-project"><%= render "unicornland" %></li>
 </ul>
 </div>

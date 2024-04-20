@@ -16,7 +16,11 @@ body {
 }
 
 .is-hidden{
-  display: none;
+  display: none !important;
+}
+
+.is-hidden-project{
+  display: none !important;
 }
 
 h3{
@@ -95,6 +99,23 @@ html{
     margin: 20px;
     width: 300px;
     border-radius: 50%;
+    &:hover{
+      --first: rotate 1s linear 1
+      --second: rotate 0.5s 1s linear infinite
+      animation: var(--first)
+      animation: var(--second)
+      // what is the order of animation parameters?
+      //
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .intro-text-container {
@@ -241,18 +262,29 @@ html{
     align-items: start;
     background-color: rgba(111, 210, 227, 0.2);
     border-radius: 2px;
-    .swap-project{
+    list-style-type: none;
+    .button-container{
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
       position: absolute;
-      right: 1rem;
+      padding: 10px;
       top: 1rem;
-      z-index: 1;
-      &:hover{
-        cursor: pointer;
-      }
+      right: 0rem;
+      width: 100%;
+      flex-direction: row-reverse;
+      .swap-project{
+        z-index: 1;
+        &:hover{
+          cursor: pointer;
+        }
+    }
+    .previous-project{
+      visibility: hidden;
+    }
     }
     > li{
         display: inline-block;
-        list-style: none;
         margin: 0px 0px;
     }
 }
@@ -291,6 +323,7 @@ html{
 
   img{
     max-width: 48px;
+    object-fit: cover;
   }
 
   img:hover{
