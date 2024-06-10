@@ -11,7 +11,15 @@
 
 $body-font: "Lato", "Helvetica", "serif";
 $headers-font: "Castoro", "Helvetica", "sans-serif";
+$thrive-font: "Montserrat", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family: "Eiko";
+  src: font-url("PPEiko-Heavy") format("woff"),
+    font-url("PPEiko-Heavy") format("woff2");
+}
+
+$farmland-font: "Eiko", "Helvetica", "sans-serif";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
