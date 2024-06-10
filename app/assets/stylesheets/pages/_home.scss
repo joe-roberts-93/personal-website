@@ -452,23 +452,29 @@
 //     }
 //   }
 // }
-
+.background-yellow{
+  background-color: #FFE099 !important;
+  transition: background-color 1s ease;
+}
+.background-green{
+  background-color: #99ffa0 !important;
+  transition: background-color 1s ease;
+}
 .bawdy{
-  background-color: rgb(74, 27, 109);
+  background-color: $background--purple;
   display: flex;
   flex-direction: column;
 
-
   .redesign{
     background-color: #11DFD3;
-    height: 800px;
+    height: 700px;
     overflow-x: hidden;
   }
 
   .heroContainer{
     padding-top: 6vh;
     width: 100%;
-    height: 800px;
+    height: 700px;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -493,9 +499,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
-    // background: linear-gradient(0deg,  rgba(74, 27, 109, 1), rgba(74, 27, 109, 0.1) 50%);
-    background: linear-gradient(to bottom, rgba(74, 27, 109, 0), rgba(74, 27, 109, 1));
+    height: 700px;
+    background: linear-gradient(to bottom, rgba(228, 123, 123, 0), $background--purple);
   }
 
   .job-title{
@@ -527,39 +532,105 @@
     transition: left 1.5s;
   }
 
+  a{
+    text-decoration: none;
+    color: #3d2e3f;
+    background-color: rgba(245, 63, 149, 0.37);
+    line-height: 1;
+    transition: color 0.2s ease-in, transform 0.2s ease-in;
+    &:hover{
+      color: #FFF;
+      transform: scale(1.05);
+    }
+  }
+
   .content{
-    width: 700px;
-    margin: 0 auto;
+    color: #3d2e3f;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
 
-    .project-redesign{
-      margin-top: 3rem;
+    .intro-redesign{
+      text-align: center;
     }
 
     p{
-      font-size: 2rem;
-      color: #FFF;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-family: $body-font
     }
 
-    .project-title-redesign{
-      color: #FFF;
+    .title-redesign{
       font-size: 2rem;
+      margin: 0 auto;
+    }
+
+    .project-redesign{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin: 3rem 0;
+    }
+
+    .project-link{
+      font-size: 1.1rem;
+      i{
+        color:#FFF;
+        transition: color 0.2s ease-in, transform 0.2s ease-in;
+        }
+      &:hover{
+        i{
+          color:#3d2e3f;
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .thrive-logo{
+      font-family: $thrive-font;
+      font-style: normal;
+      font-weight: 900;
+      color: #69388F;
+    }
+
+    .farmland-logo{
+      font-family: $farmland-font;
+      font-style: normal;
+      font-weight: 900;
+      color: #2D655E;
+    }
+
+    .project-image-desktop{
+      display: block;
+      margin: 1rem auto;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 5px;
+    }
+
+    .project-image-mobile{
+      display: none;
+    }
+
+    .contact-redesign{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3rem 0;
     }
   }
 
   @media only screen and (max-width:599px){
     .redesign{
-      height: 350px;}
+      height: 300px;}
 
     .overlay-linear-gradient{
-        height: 350px;
+        height: 300px;
       }
 
     .heroContainer{
-      height: 350px;
+      height: 300px;
       display: flex;
       flex-direction: column;
     }
@@ -579,12 +650,43 @@
     }
 
     .content{
-      width: 350px;
+      width: auto;
+      margin: 0;
 
       p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.7;
         letter-spacing: 0.01rem;
+      }
+
+      .project-redesign-left{
+        margin-top: 3rem;
+        margin-left: 9rem;
+      }
+
+      .project-redesign-right{
+        margin-top: 3rem;
+        margin-right: 9rem;
+      }
+
+      .project-image-desktop{
+        display: none;
+      }
+
+      .project-image-mobile{
+        display: block;
+        position: absolute;
+        width: 8rem;
+      }
+
+      .project-image-mobile-right{
+        rotate: 3deg;
+        right: 1rem;
+      }
+
+      .project-image-mobile-left{
+        rotate: -3deg;
+        left: 1rem;
       }
     }
 

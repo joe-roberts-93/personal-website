@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (!animationExecuted && scrollTop <= introSectionHeight) {
       var opacity = isMobile? (scrollTop / introSectionHeight) * 2 : (scrollTop / introSectionHeight) * 8;
-      document.querySelector(".overlay-linear-gradient").style.background = `linear-gradient(to bottom, rgba(74, 27, 109,${opacity}),rgba(74, 27, 109,1))`;
+
+      document.querySelector(".overlay-linear-gradient").style.background = `linear-gradient(to bottom, rgba(228, 123, 123,${opacity}),rgba(228, 123, 123,1))`;
       if (opacity >= 1) {
         animationExecuted = true;
         console.log("Animation executed");

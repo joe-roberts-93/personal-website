@@ -13,36 +13,53 @@
     <div class="intro-redesign">
     <p>Hi, I'm Joe: welcome to my portfolio!</p>
     <p>Below you'll see some examples of my work as a developer</p>
-    <p>These have been created in a variety of contexts: pro-bono work for non-profit clients;
-      personal projects, and projects for my full-stack bootcamp.</p>
+    <p>These have been created in a variety of contexts: pro-bono work for
+    non-profit clients; collaborative work completed as part of a full stack web
+    development bootcamp, and personal projects built in the pursuit of learning
+    new skills.</p>
     <p>Please reach out if you have any questions!</p>
     </div>
     <div class="projects-redesign">
-      <div class="thrive-redesign project-redesign">
-        <h3 class="project-title-redesign">Thrive Out Loud</h3>
-        <p>Thrive Out Loud, built for the LBTQ+ non-profit "Sean's Legacy" is a web
+      <div class="thrive-redesign project-redesign project-redesign-left">
+        <h3 class="title-redesign thrive-logo">THRIVE OUT LOUD</h3>
+        <%= image_tag("thrive-3.png", class:"project-image-desktop") %>
+        <%= image_tag("thrive-2.png", class:"project-image-mobile project-image-mobile-left") %>
+        <p>Thrive Out Loud, built for the LBTQ+ non-profit "Sean's Legacy", is a web
           application built to pair LGBTQ+ young adults with mentors from the professional
           world.</p>
-        <p>As the lead developer on this project, I managed a team of five volunteer
-          developers and worked with the client, product managers, and UX teams
-          to set the scope of the project and conceive and build new features.</p>
-        <p>I singlehandedly implemented the onboarding flow to collect a user's
-          data and store it in the database on sign-up, and oversaw front end
-          development of the site in-line with UX designs. Finally I designed a
-          scalable model for the data storage, and advised and oversaw the implementation
-          of data-privacy best practices.</p>
+        <p>I implemented the onboarding flow to collect a user's data and store
+          it in the database on sign-up, and oversaw front end development of
+          the site in-line with UX designs.</p>
+        <p>I also designed a scalable model for the data in our database,
+          and advised and oversaw the implementation of data-privacy best practices.</p>
         <p>This was all managed over the course of two months, having inherited
           the project in an entirely new stack and without any handover or documentation.</p>
+        <%= link_to 'https://github.com/Sean-s-Legacy/thrive-out-loud/', target: "_blank", class:"project-link" do %>
+          <i class="fa-brands fa-github"></i> Check out the GitHub repo
+        <% end %>
       </div>
-      <div class="farmland-redesign project-redesign">
-        <h3 class="project-title-redesign">Farmland</h3>
+      <div class="farmland-redesign project-redesign project-redesign-right">
+        <h3 class="title-redesign farmland-logo">Farmland</h3>
+        <%= image_tag("Farmland-desktop.png", class:"project-image-desktop") %>
+        <%= image_tag("Farmland-1.png", class:"project-image-mobile project-image-mobile-right") %>
         <p>Farmland is a web application that allows users to order from and
         carpool to local farms, all while tracking their CO2 savings versus
         buying produce from retail stores.</p>
         <p>This was a team project conceived,
         designed and built at Le Wagon's full time web development bootcamp in
         under two weeks.</p>
+        <%= link_to "https://github.com/sebasfourn/farmland", target:"_blank", class:"project-link" do%>
+        <i class="fa-brands fa-github"></i> Check out the GitHub repo
+        <% end %>
+    </div>
+    <div class="contact-redesign">
+      <h3 class="title-redesign">Contact</h3>
+      <p>I am currently open to work and new projects.</p>
+      <p>Feel free to reach out to me on LinkedIn at
+        <%= link_to 'www.linkedin.com/in/joe-roberts-web/', "https://www.linkedin.com/in/joe-roberts-web/", target:"_blank" %>
+      </p>
     </div>
   </div>
 </div>
 <%= javascript_include_tag "animated" %>
+<%= javascript_include_tag "add_yellow" %>
