@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const developer = document.querySelector(".developer");
-  const bawdy = document.querySelector(".bawdy")
+  const body = document.querySelector(".body")
   const overlay = document.querySelector(".overlay-linear-gradient")
   const heroContainer = document.querySelector(".heroContainer")
   var devAnimationExecuted = false
@@ -8,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const rect = element.getBoundingClientRect();
     return rect.bottom <= 0
   }
-  function checkDevPosition() {
+  function checkheroContainerPosition() {
     if (!devAnimationExecuted){
-    if (isScrolledPast(developer)) {
-      bawdy.classList.add("background-yellow")
+    if (isScrolledPast(heroContainer)) {
+      body.classList.add("background-yellow")
       overlay.style = ""
       overlay.classList.add("background-yellow")
       heroContainer.classList.add("background-yellow")
@@ -19,5 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   }
-  window.addEventListener('scroll', checkDevPosition);
+  checkheroContainerPosition();
+  window.addEventListener('scroll', checkheroContainerPosition);
 });

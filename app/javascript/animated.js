@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (!animationExecuted && scrollTop <= introSectionHeight) {
-      var opacity = isMobile? (scrollTop / introSectionHeight) * 2 : (scrollTop / introSectionHeight) * 8;
+      var opacity = isMobile? (scrollTop / introSectionHeight) * 2 : (scrollTop / introSectionHeight) * 2;
 
-      document.querySelector(".overlay-linear-gradient").style.background = `linear-gradient(to bottom, rgba(228, 123, 123,${opacity}),rgba(228, 123, 123,1))`;
+      document.querySelector(".overlay-linear-gradient").style.background = `linear-gradient(to bottom, rgba(181, 246, 186,${opacity}),rgba(181, 246, 186,1))`;
       if (opacity >= 1) {
         animationExecuted = true;
         console.log("Animation executed");

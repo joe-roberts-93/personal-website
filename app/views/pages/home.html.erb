@@ -1,95 +1,69 @@
-<div class="intro">
-  <div class="intro-photo">
-    <%= image_tag("joe-roberts.jpg", alt:"A photo of Joe Roberts smiling from a cliff above a beach", class:"profile-picture") %>
+<div class="body">
+  <div class="redesign">
+  <div class="overlay-linear-gradient"></div>
+    <div class="heroContainer">
+      <h1 class="heroText">Joe Roberts</h1>
+      <div class="subheader">
+      <h2 class="job-title web">web&nbsp;</h2>
+      <h2 class="job-title developer">developer</h2>
+      </div>
+    </div>
   </div>
-  <div class = intro-text-container>
-    <h1 class="intro-text">Hi, I'm Joe Roberts</h1>
-    <p class="intro-text">I'm excited for you to check out my projects!</p>
-    <a class="intro-button" href="#projects">Take&nbsp;me&nbsp;right&nbsp;to&nbsp;them!</a>
-  </div>
-</div>
-<div id="about" class="section dark">
-  <div class="section-header">
-    <h2>About me</h2>
-    <p class= "section-intro">Read about my background, skills, and what it's like to work with me</p>
-  </div>
-  <div class="about-top">
-    <div class="who-am-i">
-      <h3>Who am I?</h3>
-      <p>
-        I’m a full stack developer who loves to create things and fix problems. After becoming curious about code and wanting community and to take things further, I took a bootcamp in the summer of 2023.
-        <br>
-        <br>
-        I love to work in a team, but am currently enjoying the freedom of working on personal projects and learning new skills while I seek full-time work.
+  <div class="content">
+    <div class="intro">
+    <p  class="scroll-text">Hi, I'm Joe: welcome to my portfolio!</p>
+    <p class="scroll-text">Below you'll see some examples of my work as a developer.</p>
+    <p class="scroll-text">These have been created in a variety of contexts: pro-bono work for
+    non-profit clients; collaborative work completed as part of a full stack web
+    development bootcamp, and personal projects built in the pursuit of learning
+    new skills.</p>
+    <p class="scroll-text">Please reach out if you have any questions!</p>
+    </div>
+    <div class="projects">
+      <div class="thrive project project-left">
+        <h3 class="title thrive-logo scroll-text">THRIVE OUT LOUD</h3>
+        <%= image_tag("thrive-3.png", class:"project-image-desktop") %>
+        <%= image_tag("thrive-2.png", class:"project-image-mobile project-image-mobile-left" ) %>
+        <p class="scroll-text">Thrive Out Loud, built for the LBTQ+ non-profit "Sean's Legacy", is a web
+          application built to pair LGBTQ+ young adults with mentors from the professional
+          world.</p>
+        <p class="scroll-text">I implemented the onboarding flow to collect a user's data and store
+          it in the database on sign-up, and oversaw front end development of
+          the site in-line with UX designs.</p>
+        <p class="scroll-text">I also designed a scalable model for the data in our database,
+          and advised and oversaw the implementation of data-privacy best practices.</p>
+        <p class="scroll-text">This was all managed over the course of two months, having inherited
+          the project in an entirely new stack and without any handover or documentation.</p>
+        <%= link_to 'https://github.com/Sean-s-Legacy/thrive-out-loud/', target: "_blank", class:"project-link" do %>
+          <i class="fa-brands fa-github"></i> Check out the GitHub repo
+        <% end %>
+      </div>
+      <div class="farmland project project-right">
+        <h3 class="title farmland-logo">Farmland</h3>
+        <%= image_tag("Farmland-desktop.png", class:"project-image-desktop") %>
+        <%= image_tag("Farmland-1.png", class:"project-image-mobile project-image-mobile-right") %>
+        <p class="scroll-text">Farmland is a web application that allows users to order from and
+        carpool to local farms, all while tracking their CO2 savings versus
+        buying produce from retail stores.</p>
+        <p class="scroll-text">This was a team project conceived,
+        designed and built at Le Wagon's full time web development bootcamp in
+        under two weeks.</p>
+        <p class="scroll-text">I was primarily responsible for nested forms which
+        users could use to create orders and optionally offer carpool spaces to
+        other users. I also built the carbon calculator feature.</p>
+        <%= link_to "https://github.com/sebasfourn/farmland", target:"_blank", class:"project-link" do%>
+        <i class="fa-brands fa-github"></i> Check out the GitHub repo
+        <% end %>
+    </div>
+    <div class="contact">
+      <h3 class="title">Contact</h3>
+      <p>I am currently open to work and new projects.</p>
+      <p>Feel free to reach out to me on LinkedIn at
+        <%= link_to 'www.linkedin.com/in/joe-roberts-web/', "https://www.linkedin.com/in/joe-roberts-web/", target:"_blank" %>
       </p>
     </div>
-    <div class="skills">
-      <h3>What can I do?</h3>
-      <ul>
-        <li>Ruby on Rails</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Heroku</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-  </div>
-  <div class="personality">
-    <h3>What am I like to work with?</h3>
-    <div class="recommendation card-item">
-      <div class="recommender">
-        <%= image_tag("priscilla-uribe.jpg", alt:"Photo of Priscilla Uribe", class: "recommender-photo") %>
-        <p><span class="bold">Priscilla Uribe</span> (She/Her) <br>
-        <em>Full-Stack Developer, Co-Founder & COO @ Brokol App</em><br>
-        </p>
-      </div>
-      <p class="recommendation-text">It was an honor to work with Joe at Le Wagon Canada's Web Development Bootcamp this summer. Our collaboration peaked during our Farmland web app project, which we developed in just 7 days using Ruby on Rails.</p>
-      <p class="recommendation-text">Joe isn't just one of the most talented coders I've had the pleasure of working with; he is also great at communicating and establishing human relationships in teamwork settings. His motivation and quick adaptability to new concepts and tasks, played a crucial role in our project's success.</p>
-      <p class="recommendation-text">I am confident that Joe will be an invaluable asset to any workplace he chooses to join!</p>
-    </div>
   </div>
 </div>
-<div id="projects" class="section">
-  <div class="section-header">
-    <h2>My Work</h2>
-    <p class= "section-intro">Take a look at some of the things I've worked on.</p>
-    <p class="section-intro"> This is a collection of work done for clients, as well as personal projects and proofs of concept.</p>
-  </div>
-<%= render "projects" %>
-<div id="contact" class="section dark">
-  <div class="section-header">
-    <h2>Contact</h2>
-    <p class= "section-intro">Check out my <a href="https://www.linkedin.com/in/joe-roberts-web/">LinkedIn</a> and <a href="https://github.com/joe-roberts-93">GitHub</a> or drop me an email using the form below.</p>
-  </div>
-  <div class="contact-details">
-  <div class="form">
-  <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
-    <div class="form-group">
-      <%= form.label :name %>
-      <%= form.text_field :name, required: true, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= form.label :last_name %>
-      <%= form.text_field :last_name, required: true, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= form.label :email %>
-      <%= form.email_field :email, required: true, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= form.label :message %>
-      <%= form.text_area :message, required: true, class: "form-control" %>
-    </div>
-    <%= form.submit "Submit", class: "btn btn-primary" %>
-  <% end %>
-</div>
-<div>
-  <% flash.each do |key, value| %>
-    <div class="alert alert-<%= key %>">
-      <%= value %>
-    </div>
-  <% end %>
-</div>
+<%= javascript_include_tag "scroll_text" %>
+<%= javascript_include_tag "animated" %>
+<%= javascript_include_tag "add_yellow" %>
