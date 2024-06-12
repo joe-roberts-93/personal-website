@@ -106,7 +106,7 @@
   }
 
   .job-title{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.6rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -246,6 +246,7 @@
       height: 300px;
       display: flex;
       flex-direction: column;
+      margin: 0 auto;
     }
 
     .heroText{
@@ -304,5 +305,83 @@
       }
     }
 
+  }
+
+  @media only screen and (min-width:599px) and (max-width:992px){
+
+    .redesign{
+      height: 450px;}
+
+    .overlay-linear-gradient{
+        height: 450px;
+      }
+
+    .heroContainer{
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .heroText{
+      font-size: 11rem;
+      position: static;
+    }
+
+    .subheader{
+      display: flex;
+      margin: -0.5rem 0 0 0.5rem;
+      position: static;
+    }
+
+    .job-title{
+      font-size: 5rem;
+      position: static;
+      letter-spacing: -0.3rem;
+      }
+  }
+
+  @media only screen and (min-width:992px) and (max-width: 1200px){
+
+    .redesign{
+      height: 550px;}
+
+    .overlay-linear-gradient{
+        height: 550px;
+      }
+
+    .heroContainer{
+      height: 550px;
+    }
+
+    .heroText{
+      font-size: 18rem;
+    }
+
+    .job-title{
+      letter-spacing: -0.3rem;
+    }
+
+    .web {
+      position: absolute;
+      left: 100%;
+      top: 170px;
+    }
+
+    .move-web-left{
+      left: 25rem;
+      transition: left 1.5s;
+    }
+
+    .developer {
+      position: absolute;
+      left: 100%;
+      top: 270px;
+    }
+
+    .move-developer-left{
+      left: 27rem;
+      transition: left 1.5s;
+    }
   }
 }

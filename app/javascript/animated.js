@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+  const isMobile = window.matchMedia("only screen and (max-width: 992px)").matches;
   const introSection = document.querySelector(".redesign");
   const web = document.querySelector(".web");
   const developer = document.querySelector(".developer");
@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector(".overlay-linear-gradient").style.background = `linear-gradient(to bottom, rgba(181, 246, 186,${opacity}),rgba(181, 246, 186,1))`;
       if (opacity >= 1) {
         animationExecuted = true;
-        console.log("Animation executed");
       }
     }
   });
