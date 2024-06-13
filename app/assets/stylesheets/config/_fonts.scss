@@ -6,20 +6,25 @@
 
 @font-face {
   font-family: 'Lato';
-  src: url('Lato-Regular.ttf');
+  src: url('Lato-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: "Eiko";
+  src: font-url("PPEiko-Heavy") format("woff");
+}
+
+@font-face {
+  font-family: "Macqueen";
+  src: font-url("Macqueen-Personal-Use.ttf") format("truetype");
+}
+
 
 $body-font: "Lato", "Helvetica", "serif";
 $headers-font: "Arial", "Helvetica", "sans-serif";
 $thrive-font: "Montserrat", "Helvetica", "sans-serif";
-
-@font-face {
-  font-family: "Eiko";
-  src: font-url("PPEiko-Heavy") format("woff"),
-    font-url("PPEiko-Heavy") format("woff2");
-}
-
 $farmland-font: "Eiko", "Helvetica", "sans-serif";
+$workout-tracker-font: "Macqueen", "Helvetica", "sans-serif";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

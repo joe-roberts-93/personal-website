@@ -17,11 +17,14 @@
     non-profit clients; collaborative work completed as part of a full stack web
     development bootcamp, and personal projects built in the pursuit of learning
     new skills.</p>
-    <p class="scroll-text">Please reach out if you have any questions!</p>
+    <p class="scroll-text">Please reach out to me via <%= link_to "LinkedIn", 'www.linkedin.com/in/joe-roberts-web/', target:"_blank" %> if you have any questions!</p>
     </div>
     <div class="projects">
       <div class="thrive project project-left">
-        <h3 class="title thrive-logo scroll-text">THRIVE OUT LOUD</h3>
+        <div class="project-intro">
+          <h3 class="title thrive-logo scroll-text">THRIVE OUT LOUD</h3>
+          <p class="project-about scroll-text">Next.JS | Express | Firebase | Google Cloud | Non-profit client</p>
+        </div>
         <%= image_tag("thrive-3.png", class:"project-image-desktop") %>
         <%= image_tag("thrive-2.png", class:"project-image-mobile project-image-mobile-left" ) %>
         <p class="scroll-text">Thrive Out Loud, built for the LBTQ+ non-profit "Sean's Legacy", is a web
@@ -39,10 +42,13 @@
         <% end %>
       </div>
       <div class="farmland project project-right">
-        <h3 class="title farmland-logo">Farmland</h3>
+        <div class="project-intro">
+          <h3 class="title farmland-logo">Farmland</h3>
+          <p class="project-about scroll-text">Full-stack Rails web application | Bootcamp final project</p>
+        </div>
         <%= image_tag("Farmland-desktop.png", class:"project-image-desktop") %>
         <%= image_tag("Farmland-1.png", class:"project-image-mobile project-image-mobile-right") %>
-        <p class="scroll-text">Farmland is a web application that allows users to order from and
+        <p class="scroll-text">Farmland allows users to order from and
         carpool to local farms, all while tracking their CO2 savings versus
         buying produce from retail stores.</p>
         <p class="scroll-text">This was a team project conceived,
@@ -55,12 +61,38 @@
         <i class="fa-brands fa-github"></i> Check out the GitHub repo
         <% end %>
     </div>
+    <div class="Workout Tracker project project-left">
+      <div class="project-intro">
+        <h3 class="title workout-tracker-logo">Workout Tracker</h3>
+        <p class="project-about scroll-text">Rails API | React frontend | Token-based authentication</p>
+      </div>
+        <%= image_tag("workout-tracker-desktop.png", class:"project-image-desktop") %>
+        <%= image_tag("workout-tracker-mobile.png", class:"project-image-mobile project-image-mobile-left") %>
+        <p class="scroll-text">Workout Tracker is an application for people who
+        might be new to working out, are a little bit shy at the gym, or just want
+        to get into the gym, do their workout and get out as fast as possible!</p>
+        <p class="scroll-text">Currently it just tracks your workout, but the
+        future of this application involves adding data visualisation so that
+        users can find the quietest times to work out specific body areas at their
+        gyms.</p>
+        <p class="scroll-text">Workout Tracker was built as a separate front- and back-end in React and Rails.</p>
+        <p><%= link_to "https://github.com/joe-roberts-93/workout-tracker", target:"_blank", class:"project-link" do%>
+        <i class="fa-brands fa-github"></i> Check out the frontend GitHub repo
+        <% end %>
+        </p>
+        <p>
+        <%= link_to "https://github.com/joe-roberts-93/gym-app", target:"_blank", class:"project-link" do%>
+        <i class="fa-brands fa-github"></i> Check out the backend GitHub repo
+        <% end %>
+        </p>
+    </div>
     <div class="contact">
       <h3 class="title">Contact</h3>
       <p>I am currently open to work and new projects.</p>
-      <p>Feel free to reach out to me on LinkedIn at
-        <%= link_to 'www.linkedin.com/in/joe-roberts-web/', "https://www.linkedin.com/in/joe-roberts-web/", target:"_blank" %>
-      </p>
+      <p>Feel free to reach out to me on LinkedIn at </p>
+      <%= link_to "www.linkedin.com/in/joe-roberts-web/", target:"_blank" do %>
+        www.linkedin.com/in/joe-roberts-web
+      <% end %>
     </div>
   </div>
 </div>
